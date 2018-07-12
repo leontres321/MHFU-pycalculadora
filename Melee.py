@@ -1,8 +1,6 @@
-#Hacer esto para cada arma y contener los combos
 from abc import ABCMeta, abstractmethod
 
 class Arma_melee(metaclass = ABCMeta):
-    #ver si poner o no var aca, por la falta de var
     def __init__(self, base, elem, elem_dano, filo_base, filo_elem, critico, clase, var):
         self.base = base
         self.elem_dano = elem_dano
@@ -14,7 +12,6 @@ class Arma_melee(metaclass = ABCMeta):
         self.var = var
 
     @abstractmethod
-    #TODO SACAR TIPO CUANDO LOGRE HACER DECENTE LOS ATAQUES
     def dano_base(self, zona, defensa, ira):
         pass
 
