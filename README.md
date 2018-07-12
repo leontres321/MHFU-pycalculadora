@@ -3,7 +3,8 @@ Intento de calculadora en python para el juego MHFU
 
 
 # Metas
-- Calcular el daño de espada y escudo ante un monstruo
+- ~~Calcular el daño de espada y escudo ante un monstruo~~
+- Hacer el codigo como un ser humano pensante
 - Escoger espadas y escudos dentro del programa
 - Cambiar el monstruo con el que se pelea
 - Cambiar el tipo de arma
