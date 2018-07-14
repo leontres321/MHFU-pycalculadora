@@ -16,7 +16,7 @@ class Arma_melee(metaclass = ABCMeta):
         pass
 
     def dano_elem(self):
-        return self.elem * self.filo_elem * self.var / 10
+        return self.elem_dano * self.filo_elem * self.var / 10
 
     @abstractmethod
     def input_correcto(self):
