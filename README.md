@@ -23,9 +23,9 @@ De estas tres paginas de **GameFAQs**:\
 [Para ballesta](https://gamefaqs.gamespot.com/psp/943356-monster-hunter-freedom-unite/faqs/57865)
 
 # Versiones:
-  - v0.0.3
+  - v0.1.1
     - Se creó una carpeta para monstruos y se comenzó a trabajar con metodos, ademas se hizo una subclase para las espadas y escudos.
-  - v0.0.2
+  - v0.1.0
     - Se agregaron clases para poder la hacer la calculadora de una forma "bonita" (clases de python) y se dividió el código
   - v0.0.1
     - Version inicial de la calculadora, tan solo se probó la formula para c/c
