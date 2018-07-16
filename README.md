@@ -41,10 +41,10 @@ De estas tres paginas de **GameFAQs**:\
 - Por el momento los monstruos no tendran estado de ira (haciendo que esta variable sea 1 simpre)
 
 # Como se suman los bonificadores:
-Hace unos años busqué como se apilan los bonificadores de ataque (comida, objetos y más) por lo que lo dejaré aquí para no olvidarlo. Las Categorías se suman pero solo puede haber un bonificador activo en cada Categoría por lo que si tomas una Droga Demoniaca y una MegaDroga Demoniaca estas no se suman y solo se toma la mayor.
-[Categoría 1] Amuletos
-[Categoría 2] Garras
-[Categoría 3] Semilla de Poder, Píldora de Poder o Flauta Demonio
-[Categoría 4] Droga Demoniaca, MegaDroga Demoniaca o Cocina Felyne
-[Categoría 5] Aumento Ataque [Bajo]/[Medio]/[Alto] por la Armadura
+Hace unos años busqué como se apilan los bonificadores de ataque (comida, objetos y más) por lo que lo dejaré aquí para no olvidarlo. Las Categorías se suman pero solo puede haber un bonificador activo en cada Categoría por lo que si tomas una Droga Demoniaca y una MegaDroga Demoniaca estas no se suman y solo se toma la mayor. \
+[Categoría 1] Amuletos \
+[Categoría 2] Garras \
+[Categoría 3] Semilla de Poder, Píldora de Poder o Flauta Demonio \
+[Categoría 4] Droga Demoniaca, MegaDroga Demoniaca o Cocina Felyne \
+[Categoría 5] Aumento Ataque [Bajo]/[Medio]/[Alto] por la Armadura \
 [Categoría 6] Cuerno de Caza: Aumento Ataque [Bajo x1], [Bajo x2] o [Alto x1], [Alto x2]
