@@ -24,7 +24,7 @@ De estas tres paginas de **GameFAQs**:\
 
 # Versiones:
   - v0.1.2
-    - Se eliminó la carpeta de monstruos y se generó un archivo con todos estos, ademas fueron ingresados al código
+    - Se eliminó la carpeta de monstruos y se generó un archivo con todos estos, ademas fueron ingresados al código y se comenzó la funcion de calculo de daño e impresión
   - v0.1.1
     - Se creó una carpeta para monstruos y se comenzó a trabajar con metodos, ademas se hizo una subclase para las espadas y escudos.
   - v0.1.0
