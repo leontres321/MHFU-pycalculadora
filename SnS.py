@@ -8,17 +8,15 @@ class SnS(Arma_melee):
         self.movimiento = [.46, .27, .18, .15, .15, .14, .18]
         self.arma = "SnS"
 
-    def dano_base(self, input):
-        return self.base * self.movimiento[input] * self.filo_base * self.var / self.clase
-
     def input_correcto(self):
         var = int(input("Ingrese un numero de los antes listados: "))
-        if var >= 0 and var <=7:
+        if var >= -1 and var <=7:
             return var
         else:
             raise AssertionError("Input incorrecto")
 
     def inp(self):
+        print("-1: Salir del programa")
         print("0: Combo regular")
         print("1: Corte giratorio")
         print("2: Corte con saltando")
@@ -26,7 +24,7 @@ class SnS(Arma_melee):
         print("4: Ataque con bloqueo 1")
         print("5: Ataque con bloqueo 2")
         print("6: Corte desenfundando")
-        print("7: Volver")
+        print("7: Escoger denuevo")
 
         #intento de algo decente... ok esta re malo pero almenos hace el trabajo
         while True:

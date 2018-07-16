@@ -10,14 +10,12 @@ class Arma_melee(metaclass = ABCMeta):
         self.clase = clase
         self.var = var
 
-    #Esto es abstracto por la variable type, que refiere al movimiento del ataque
-    @abstractmethod
-    def dano_base(self, input):
-        pass
-
-    def dano_elem(self):
-        return self.elem_dano * self.filo_elem * self.var / 10
-
     @abstractmethod
     def input_correcto(self):
         pass
+
+    def dano_elem_arma(self):
+        return self.elem_dano * self.filo_elem * self.var / 10
+
+    def dano_base_arma(self, input):
+        return self.base * self.movimiento[input] * self.filo_base * self.var / self.clase

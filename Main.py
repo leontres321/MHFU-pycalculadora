@@ -1,20 +1,60 @@
-from Melee import *
-import Monstruo
+from SnS import *
+from Ayuda import *
+from Monstruo import *
 
-#TODO guardar el filo en el arma y solo revisar el diccionario al crear esta
+#Generar SnS self, base, elem, elem_dano, filo_base, filo_elem
+
+#Generar monstruo cantidad_matriz, matriz
+#Generar dano al monstruo  dano_base_arma, tipo_arma, elem, dano_elem_arma
+
 if __name__ == '__main__':
-    #(self, base, elem, filo, critico, clase)
-    SnS = Arma_melee(196, 520, "blanco", 0, 1.4)
-    filo_base = {"rojo": 0.5, "naranjo": 0.75, "amarillo": 1, "verde": 1.125, "azul": 1.25, "blanco": 1.3, "morado": 1.5}
-    filo_elem = {"rojo": 0.25, "naranjo": 0.5, "amarillo": 0.75, "verde": 1, "azul": 1.0625, "blanco": 1.125, "morado": 1.2}
+    #Tablas de ayuda, se usan para las armas
+    tablas = Ayuda()
+    #lista de todos los monstruos
+    ListaMonstruos = []
 
-    #(self, tipo, filo_base, zona, defensa, ira, var)
-    dano_base = SnS.dano_base(0.18, filo_base[SnS.filo], 0.8, 1, 1, 1)
+    #LECTURA DEL ARCHIVO DE MONSTRUOS TODO VER SI HACER UNA FUNCION PARA LIMPIAR MAIN
+    arch = open("ListaMonstruos.txt","r")
+    for i in range(65):
+        #lectura de una linea
+        linea = arch.readline()
+        #Separacion de primera linea
+        mon_cant = int(linea[0])
+        mon_nombre = linea[2:]
+        mon_matriz = []
+        #leer lineas que tenga el bichito bonito
+        for j in range(mon_cant):
+            linea = arch.readline()
+            aux = [float(i) for x in linea.split()]
+            mon_matriz.append(aux)
 
-    #(self, filo_elem, Ezona, defensa, ira, var)
-    dano_elem = SnS.dano_elem(filo_elem[SnS.filo], 0.3, 1, 1, 1)
+        #Lectura de linea vacia
+        arch.readline()
+        #Generar un objeto monstruo
+        ListaMonstruos.append(Monstruo(mon_nombre, mon_cant, mon_matriz, 0.75, 1))
+    arch.close()
+    #LECTURA DE LAS ARMAS
 
+    #COMIENZO DEL LOOP
+    while True:
+        #PREGUNTAR MONSTRUO
+        inp_mons = tablas.input_monstruos(ListaMonstruos)
+        if inp_mons == -1:
+            break
 
-    print("Prueba de Sns saltando vs Rathalos G:")
-    print("Daño base: ", dano_base, ", Daño elemental: ", dano_elem)
-    print("Total: ", dano_base + dano_elem)
+        print("\n~~~~~~~~~~~~~~")
+        print("Monstruo seleccionado: {0}".format(ListaMonstruos[inp_mons].nombre))
+        print("~~~~~~~~~~~~~~")
+
+        #PREGUNTAR ARMA
+        SnS = SnS(196, "Dragon", 520, tablas.filo_base["blanco"], tablas.filo_elem["blanco"])
+        inp_arma = SnS.inp()
+        if inp_arma == -1:
+            break
+
+        #dano_base_arma, tipo_arma, elem, dano_elem_arma
+        #Generar daño al monstruo e imprimir
+        ListaMonstruos[inp_mons].dano_zonas(SnS.dano_base_arma(inp_arma),tablas.arma[SnS.arma], SnS.elem, SnS.dano_elem_arma())
+
+    #FINAL DEL LOOP
+    print("\nSaliendo...")
