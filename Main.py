@@ -25,8 +25,16 @@ if __name__ == '__main__':
         #leer lineas que tenga el bichito bonito
         for j in range(mon_cant):
             linea = arch.readline()
-            aux = [float(i) for x in linea.split()]
-            mon_matriz.append(aux)
+            lista = linea.split()
+            nuevo = []
+
+            for m in lista:
+                try:
+                    nuevo.append(float(m))
+                except ValueError:
+                    nuevo.append(m)
+
+            mon_matriz.append(nuevo)
 
         #Lectura de linea vacia
         arch.readline()
@@ -47,14 +55,15 @@ if __name__ == '__main__':
         print("~~~~~~~~~~~~~~")
 
         #PREGUNTAR ARMA
-        SnS = SnS(196, "Dragon", 520, tablas.filo_base["blanco"], tablas.filo_elem["blanco"])
-        inp_arma = SnS.inp()
+        Test = SnS(196, "Dragon", 520, tablas.filo_base["blanco"], tablas.filo_elem["blanco"])
+        inp_arma = Test.inp()
         if inp_arma == -1:
             break
 
         #dano_base_arma, tipo_arma, elem, dano_elem_arma
         #Generar daño al monstruo e imprimir
-        ListaMonstruos[inp_mons].dano_zonas(SnS.dano_base_arma(inp_arma),tablas.arma[SnS.arma], SnS.elem, SnS.dano_elem_arma())
+        ListaMonstruos[inp_mons].dano_zonas(Test.dano_base_arma(inp_arma),tablas.arma[Test.arma], Test.elem, Test.dano_elem_arma())
+
 
     #FINAL DEL LOOP
     print("\nSaliendo...")
