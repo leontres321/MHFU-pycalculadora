@@ -23,6 +23,8 @@ De estas tres paginas de **GameFAQs**:\
 [Para ballesta](https://gamefaqs.gamespot.com/psp/943356-monster-hunter-freedom-unite/faqs/57865)
 
 # Versiones:
+  - v0.2.1
+    - Se arreglo el daño para el hielo, se hizo una funcion para inicializacion de los monstruos para limpiar main
   - v0.2.0
     - Se arregló la inicializacion de monstruos ya que la lista de zonas estaba mal generada, se puede generar del daño de una Espada y Escudo (está en el código) a todos los monstros grandes del juego.
   - v0.1.2

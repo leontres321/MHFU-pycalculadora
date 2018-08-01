@@ -5,7 +5,7 @@ class Monstruo:
         self.nombre = nombre
         self.cant_zonas = cant_zonas
         self.zonas = zonas
-        self.elemento = {"Fuego":2, "Agua":3, "Trueno":4, "Dragon":5, "Hielo":6}
+        self.elemento = {"Fuego":3, "Agua":4, "Trueno":5, "Dragon":6, "Hielo":7}
 
         #Ver notas del README
         self.defensa = defensa
@@ -21,13 +21,14 @@ class Monstruo:
         print("############################")
 
         if tipo_arma == 0:
-            print("|Lugar ||Cortante ||", elem, " || Total |")
+            print("|Lugar         ||Cortante    ||", elem, " || Total |")
             zona_dano = 1
         else:
-            print("|Lugar ||Contundente ||", elem, " || Total |")
+            print("|Lugar         ||Contundente ||", elem, " || Total |")
             zona_dano = 2
 
         elemento_a_imprimir = self.elemento[elem]
+
 
         #loop para imprimir resultados
         for i in range(self.cant_zonas):
