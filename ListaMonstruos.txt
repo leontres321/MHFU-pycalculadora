@@ -1,3 +1,5 @@
+#Cantidad_areas Nombre_monstruo
+#Area_a_golpear defensa_cortante defensa_contundente defensa_fuego defensa_agua defensa_trueno defensa_dragon defensa_hielo
 7 Akantor
 Cabeza .50 .60 .0 .05 .20 .40 .0
 Cabeza .35 .50 .0 .05 .15 .20 .0
