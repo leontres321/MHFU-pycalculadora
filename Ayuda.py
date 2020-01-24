@@ -15,7 +15,7 @@ class Ayuda:
     def input_monstruos(self):
         print("-1: Salir del programa")
         for i in range(self.cant_monstruos):
-            print("{0}: {1}".format(i,self.ListaMonstruos[i].nombre), end = "")
+            print("{0}: {1}".format(i,self.ListaMonstruos[i].nombre), end = "" )
 
         while True:
             inp = input("Ingrese numero del monstruo a dañar: ")
@@ -61,6 +61,12 @@ class Ayuda:
                         nuevo.append(m)
 
                 mon_matriz.append(nuevo)
+
+            print("#" * 40)
+            print (mon_nombre)
+            print(mon_matriz)
+            print("#" * 40)
+
 
             #Lectura de linea vacia
             arch.readline()
