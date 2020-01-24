@@ -40,7 +40,7 @@ hunting_horn_types = {"Swing Attack" : .27, "Poke Attack" : .36, "Overhead Smash
 hunting_horn_dict = {"Var" : 1, "Type" : long_sword_types, "Class" : 5.2}
 
 
-Divisor = 10
+divisor = 10
 
 #### formato hitzone :[["Cabeza", .50, .60, .0 ,.05 ,.20, .40, .0],...]
 hit_dict = {"Cut" : 1, "Impact" : 2, "Fire" : 3, "Water" : 4,"Thunder" : 5, "Dragon" : 6, "Ice" : 7}
