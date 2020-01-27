@@ -55,3 +55,8 @@ Hace unos años busqué como se apilan los bonificadores de ataque (comida, obje
 [Categoría 4] Droga Demoniaca, MegaDroga Demoniaca o Cocina Felyne \
 [Categoría 5] Aumento Ataque [Bajo]/[Medio]/[Alto] por la Armadura \
 [Categoría 6] Cuerno de Caza: Aumento Ataque [Bajo x1], [Bajo x2] o [Alto x1], [Alto x2]
+
+
+
+# Ayuda visual de la formula de daño
+![Arbol dano](calculadora.png)
